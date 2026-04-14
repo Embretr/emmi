@@ -1,9 +1,8 @@
 # Emmi
 
-Opinionated Claude Code skill kit: planning, UI, QA, tests, deploy, stack conventions, and team workflows. Ships with a **`ui-blocks/`** library (marketing, ecommerce, application, UI primitives). **Rules** and **evaluators** hold local guardrails (gitignored entries are person-specific; only each `README.md` is tracked).
+My very own heavily opinionated Claude Code skillset. Sole purpose is to maximize productivity of my workflows with Claude Code.
 
-Replace `https://github.com/<org>/emmi.git` with this repository’s URL once it exists on GitHub.
-
+**Repo:** https://github.com/Embretr/emmi
 ---
 
 ## Step 1: Install on your machine
@@ -12,7 +11,7 @@ Open **Claude Code**, paste the block below, and send it. Claude runs the clone 
 
 ```
 Install Emmi: run
-git clone --single-branch --depth 1 https://github.com/<org>/emmi.git ~/emmi && cd ~/emmi && ./bin/setup
+git clone --single-branch --depth 1 https://github.com/Embretr/emmi.git ~/emmi && cd ~/emmi && ./bin/setup
 
 Then restart Claude Code or start a new session so skills load.
 
@@ -24,7 +23,7 @@ If the user wants routing for **their current project**, offer to append the "Em
 ## Install (shell only)
 
 ```bash
-git clone --single-branch --depth 1 https://github.com/<org>/emmi.git ~/emmi
+git clone --single-branch --depth 1 https://github.com/Embretr/emmi.git ~/emmi
 cd ~/emmi && ./bin/setup
 ```
 
