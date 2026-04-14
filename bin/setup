@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+TARGET_DIR="${EMMI_SKILLS_HOME:-$HOME/.claude/skills}"
+TARGET="$TARGET_DIR/emmi"
+mkdir -p "$TARGET_DIR"
+if [[ -e "$TARGET" && ! -L "$TARGET" ]]; then
+  echo "Refusing to overwrite non-symlink: $TARGET" >&2
+  exit 1
+fi
+rm -f "$TARGET"
+ln -sf "$REPO_ROOT" "$TARGET"
+echo "Linked $TARGET -> $REPO_ROOT"

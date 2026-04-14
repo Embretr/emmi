@@ -1,0 +1,267 @@
+# Ecommerce UI blocks
+
+Base path: `ui-blocks/ecommerce/` — component files under `ecommerce/react/`.
+
+## How to use (AI)
+
+1. Pick a category below (or search filenames for keywords: hero, cart, table, etc.).
+2. `Read` the `.jsx` / `.tsx` file(s) as layout and Tailwind reference; adapt markup to the target app.
+
+**Total files:** 114
+
+## Category tree
+
+- **components/** (84 components)
+  - **category-filters/** (5 components)
+    - `01-with-centered-text-and-dropdown-product-filters.jsx`
+    - `02-with-dropdown-product-filters.jsx`
+    - `03-with-expandable-product-filter-panel.jsx`
+    - `04-with-inline-actions-and-expandable-sidebar-filters.jsx`
+    - `05-sidebar-filters.jsx`
+  - **category-previews/** (6 components)
+    - `01-with-image-backgrounds.jsx`
+    - `02-three-column.jsx`
+    - `03-with-background-image-and-detail-overlay.jsx`
+    - `04-three-column-with-description.jsx`
+    - `05-with-scrolling-cards.jsx`
+    - `06-with-split-images.jsx`
+  - **checkout-forms/** (5 components)
+    - `01-single-step-with-order-summary.jsx`
+    - `02-with-mobile-order-summary-overlay.jsx`
+    - `03-multi-step.jsx`
+    - `04-with-order-summary-sidebar.jsx`
+    - `05-split-with-order-summary.jsx`
+  - **incentives/** (8 components)
+    - `01-3-column-with-illustrations-and-split-header.jsx`
+    - `02-4-column-with-illustrations.jsx`
+    - `03-3-column-with-illustrations-and-header.jsx`
+    - `04-3-column-with-illustrations-and-centered-text.jsx`
+    - `05-3-column-with-illustrations-and-heading.jsx`
+    - `06-2x2-grid-with-illustrations.jsx`
+    - `08-3-column-with-icons-and-supporting-text.jsx`
+    - `09-3-column-with-icons.jsx`
+  - **order-history/** (4 components)
+    - `03-invoice-panels.jsx`
+    - `04-invoice-table.jsx`
+    - `06-invoice-list.jsx`
+    - `07-invoice-list-with-quick-actions.jsx`
+  - **order-summaries/** (4 components)
+    - `01-with-split-image.jsx`
+    - `03-with-progress-bars.jsx`
+    - `04-with-large-images-and-progress-bars.jsx`
+    - `05-simple-with-full-order-details.jsx`
+  - **product-features/** (9 components)
+    - `01-with-header-images-and-descriptions.jsx`
+    - `02-with-fading-image.jsx`
+    - `03-with-image-grid.jsx`
+    - `04-with-wide-images.jsx`
+    - `05-with-split-image.jsx`
+    - `06-with-tabs.jsx`
+    - `07-with-alternating-sections.jsx`
+    - `08-with-square-images.jsx`
+    - `09-with-tiered-images.jsx`
+  - **product-lists/** (11 components)
+    - `01-with-inline-price.jsx`
+    - `02-with-cta-link.jsx`
+    - `03-with-color-swatches-and-horizontal-scrolling.jsx`
+    - `04-with-tall-images.jsx`
+    - `05-with-image-overlay-and-add-button.jsx`
+    - `06-simple.jsx`
+    - `07-with-tall-images-and-cta-link.jsx`
+    - `08-with-border-grid.jsx`
+    - `09-with-supporting-text.jsx`
+    - `10-with-inlne-price-and-cta-link.jsx`
+    - `11-card-with-full-details.jsx`
+  - **product-overviews/** (5 components)
+    - `01-with-tiered-images.jsx`
+    - `02-with-image-gallery-and-expandable-details.jsx`
+    - `03-split-with-image-and-featured-details.jsx`
+    - `04-with-image-grid.jsx`
+    - `05-with-tabs.jsx`
+  - **product-quickviews/** (4 components)
+    - `01-with-color-selector-size-selector-and-details-link.jsx`
+    - `02-with-color-and-size-selector.jsx`
+    - `03-with-large-size-selector.jsx`
+    - `04-with-color-selector-and-description.jsx`
+  - **promo-sections/** (8 components)
+    - `01-with-fading-background-image-and-testimonials.jsx`
+    - `02-full-width-with-background-image.jsx`
+    - `03-full-width-with-overlapping-image-tiles.jsx`
+    - `04-with-background-image.jsx`
+    - `05-with-overlapping-image-tiles.jsx`
+    - `06-with-offers-and-split-image.jsx`
+    - `07-with-image-tiles.jsx`
+    - `08-full-width-with-background-image-and-large-content.jsx`
+  - **reviews/** (4 components)
+    - `01-multi-column.jsx`
+    - `02-with-summary-chart.jsx`
+    - `03-avatars-with-separate-description.jsx`
+    - `04-simple-with-avatars.jsx`
+  - **shopping-carts/** (6 components)
+    - `01-two-column-with-quantity-dropdown.jsx`
+    - `02-single-column.jsx`
+    - `03-with-extended-summary.jsx`
+    - `04-drawer.jsx`
+    - `05-dialog.jsx`
+    - `06-popover.jsx`
+  - **store-navigation/** (5 components)
+    - `01-with-image-grid.jsx`
+    - `02-with-simple-menu-and-promo.jsx`
+    - `03-with-featured-categories.jsx`
+    - `04-with-navigation-and-tiered-featured-categories.jsx`
+    - `05-with-double-column-and-persistent-mobile-nav.jsx`
+- **page-examples/** (30 components)
+  - **category-pages/** (5 components)
+    - `01-with-text-header-and-image-product-grid.jsx`
+    - `02-with-image-header-and-detail-product-grid.jsx`
+    - `04-with-text-header-and-simple-product-grid.jsx`
+    - `06-with-product-grid-and-pagination.jsx`
+    - `07-with-large-images-and-filters-sidebar.jsx`
+  - **checkout-pages/** (5 components)
+    - `01-with-order-summary-sidebar.jsx`
+    - `02-single-step-with-order-summary.jsx`
+    - `04-with-mobile-order-summary-overlay.jsx`
+    - `05-multi-step.jsx`
+    - `07-split-with-order-summary.jsx`
+  - **order-detail-pages/** (3 components)
+    - `03-with-progress-bars.jsx`
+    - `04-with-large-images-and-progress-bars.jsx`
+    - `05-simple-with-full-order-details.jsx`
+  - **order-history-pages/** (5 components)
+    - `01-simple.jsx`
+    - `02-with-invoice-list-and-quick-actions.jsx`
+    - `03-with-invoice-panels.jsx`
+    - `04-with-invoice-tables.jsx`
+    - `06-with-invoice-list.jsx`
+  - **product-pages/** (5 components)
+    - `01-with-related-products.jsx`
+    - `02-with-image-grid.jsx`
+    - `03-with-expandable-product-details.jsx`
+    - `04-with-featured-details.jsx`
+    - `05-with-tabs-and-related-products.jsx`
+  - **shopping-cart-pages/** (3 components)
+    - `01-with-related-products.jsx`
+    - `02-simple-with-policy-grid.jsx`
+    - `03-with-policy-grid-and-extended-summary.jsx`
+  - **storefront-pages/** (4 components)
+    - `01-with-dark-nav-and-footer.jsx`
+    - `02-with-offers-and-testimonials.jsx`
+    - `03-with-image-tiles-and-feature-sections.jsx`
+    - `04-with-overlapping-image-tiles-and-perks.jsx`
+
+## All files (flat)
+
+- `components/category-filters/01-with-centered-text-and-dropdown-product-filters.jsx`
+- `components/category-filters/02-with-dropdown-product-filters.jsx`
+- `components/category-filters/03-with-expandable-product-filter-panel.jsx`
+- `components/category-filters/04-with-inline-actions-and-expandable-sidebar-filters.jsx`
+- `components/category-filters/05-sidebar-filters.jsx`
+- `components/category-previews/01-with-image-backgrounds.jsx`
+- `components/category-previews/02-three-column.jsx`
+- `components/category-previews/03-with-background-image-and-detail-overlay.jsx`
+- `components/category-previews/04-three-column-with-description.jsx`
+- `components/category-previews/05-with-scrolling-cards.jsx`
+- `components/category-previews/06-with-split-images.jsx`
+- `components/checkout-forms/01-single-step-with-order-summary.jsx`
+- `components/checkout-forms/02-with-mobile-order-summary-overlay.jsx`
+- `components/checkout-forms/03-multi-step.jsx`
+- `components/checkout-forms/04-with-order-summary-sidebar.jsx`
+- `components/checkout-forms/05-split-with-order-summary.jsx`
+- `components/incentives/01-3-column-with-illustrations-and-split-header.jsx`
+- `components/incentives/02-4-column-with-illustrations.jsx`
+- `components/incentives/03-3-column-with-illustrations-and-header.jsx`
+- `components/incentives/04-3-column-with-illustrations-and-centered-text.jsx`
+- `components/incentives/05-3-column-with-illustrations-and-heading.jsx`
+- `components/incentives/06-2x2-grid-with-illustrations.jsx`
+- `components/incentives/08-3-column-with-icons-and-supporting-text.jsx`
+- `components/incentives/09-3-column-with-icons.jsx`
+- `components/order-history/03-invoice-panels.jsx`
+- `components/order-history/04-invoice-table.jsx`
+- `components/order-history/06-invoice-list.jsx`
+- `components/order-history/07-invoice-list-with-quick-actions.jsx`
+- `components/order-summaries/01-with-split-image.jsx`
+- `components/order-summaries/03-with-progress-bars.jsx`
+- `components/order-summaries/04-with-large-images-and-progress-bars.jsx`
+- `components/order-summaries/05-simple-with-full-order-details.jsx`
+- `components/product-features/01-with-header-images-and-descriptions.jsx`
+- `components/product-features/02-with-fading-image.jsx`
+- `components/product-features/03-with-image-grid.jsx`
+- `components/product-features/04-with-wide-images.jsx`
+- `components/product-features/05-with-split-image.jsx`
+- `components/product-features/06-with-tabs.jsx`
+- `components/product-features/07-with-alternating-sections.jsx`
+- `components/product-features/08-with-square-images.jsx`
+- `components/product-features/09-with-tiered-images.jsx`
+- `components/product-lists/01-with-inline-price.jsx`
+- `components/product-lists/02-with-cta-link.jsx`
+- `components/product-lists/03-with-color-swatches-and-horizontal-scrolling.jsx`
+- `components/product-lists/04-with-tall-images.jsx`
+- `components/product-lists/05-with-image-overlay-and-add-button.jsx`
+- `components/product-lists/06-simple.jsx`
+- `components/product-lists/07-with-tall-images-and-cta-link.jsx`
+- `components/product-lists/08-with-border-grid.jsx`
+- `components/product-lists/09-with-supporting-text.jsx`
+- `components/product-lists/10-with-inlne-price-and-cta-link.jsx`
+- `components/product-lists/11-card-with-full-details.jsx`
+- `components/product-overviews/01-with-tiered-images.jsx`
+- `components/product-overviews/02-with-image-gallery-and-expandable-details.jsx`
+- `components/product-overviews/03-split-with-image-and-featured-details.jsx`
+- `components/product-overviews/04-with-image-grid.jsx`
+- `components/product-overviews/05-with-tabs.jsx`
+- `components/product-quickviews/01-with-color-selector-size-selector-and-details-link.jsx`
+- `components/product-quickviews/02-with-color-and-size-selector.jsx`
+- `components/product-quickviews/03-with-large-size-selector.jsx`
+- `components/product-quickviews/04-with-color-selector-and-description.jsx`
+- `components/promo-sections/01-with-fading-background-image-and-testimonials.jsx`
+- `components/promo-sections/02-full-width-with-background-image.jsx`
+- `components/promo-sections/03-full-width-with-overlapping-image-tiles.jsx`
+- `components/promo-sections/04-with-background-image.jsx`
+- `components/promo-sections/05-with-overlapping-image-tiles.jsx`
+- `components/promo-sections/06-with-offers-and-split-image.jsx`
+- `components/promo-sections/07-with-image-tiles.jsx`
+- `components/promo-sections/08-full-width-with-background-image-and-large-content.jsx`
+- `components/reviews/01-multi-column.jsx`
+- `components/reviews/02-with-summary-chart.jsx`
+- `components/reviews/03-avatars-with-separate-description.jsx`
+- `components/reviews/04-simple-with-avatars.jsx`
+- `components/shopping-carts/01-two-column-with-quantity-dropdown.jsx`
+- `components/shopping-carts/02-single-column.jsx`
+- `components/shopping-carts/03-with-extended-summary.jsx`
+- `components/shopping-carts/04-drawer.jsx`
+- `components/shopping-carts/05-dialog.jsx`
+- `components/shopping-carts/06-popover.jsx`
+- `components/store-navigation/01-with-image-grid.jsx`
+- `components/store-navigation/02-with-simple-menu-and-promo.jsx`
+- `components/store-navigation/03-with-featured-categories.jsx`
+- `components/store-navigation/04-with-navigation-and-tiered-featured-categories.jsx`
+- `components/store-navigation/05-with-double-column-and-persistent-mobile-nav.jsx`
+- `page-examples/category-pages/01-with-text-header-and-image-product-grid.jsx`
+- `page-examples/category-pages/02-with-image-header-and-detail-product-grid.jsx`
+- `page-examples/category-pages/04-with-text-header-and-simple-product-grid.jsx`
+- `page-examples/category-pages/06-with-product-grid-and-pagination.jsx`
+- `page-examples/category-pages/07-with-large-images-and-filters-sidebar.jsx`
+- `page-examples/checkout-pages/01-with-order-summary-sidebar.jsx`
+- `page-examples/checkout-pages/02-single-step-with-order-summary.jsx`
+- `page-examples/checkout-pages/04-with-mobile-order-summary-overlay.jsx`
+- `page-examples/checkout-pages/05-multi-step.jsx`
+- `page-examples/checkout-pages/07-split-with-order-summary.jsx`
+- `page-examples/order-detail-pages/03-with-progress-bars.jsx`
+- `page-examples/order-detail-pages/04-with-large-images-and-progress-bars.jsx`
+- `page-examples/order-detail-pages/05-simple-with-full-order-details.jsx`
+- `page-examples/order-history-pages/01-simple.jsx`
+- `page-examples/order-history-pages/02-with-invoice-list-and-quick-actions.jsx`
+- `page-examples/order-history-pages/03-with-invoice-panels.jsx`
+- `page-examples/order-history-pages/04-with-invoice-tables.jsx`
+- `page-examples/order-history-pages/06-with-invoice-list.jsx`
+- `page-examples/product-pages/01-with-related-products.jsx`
+- `page-examples/product-pages/02-with-image-grid.jsx`
+- `page-examples/product-pages/03-with-expandable-product-details.jsx`
+- `page-examples/product-pages/04-with-featured-details.jsx`
+- `page-examples/product-pages/05-with-tabs-and-related-products.jsx`
+- `page-examples/shopping-cart-pages/01-with-related-products.jsx`
+- `page-examples/shopping-cart-pages/02-simple-with-policy-grid.jsx`
+- `page-examples/shopping-cart-pages/03-with-policy-grid-and-extended-summary.jsx`
+- `page-examples/storefront-pages/01-with-dark-nav-and-footer.jsx`
+- `page-examples/storefront-pages/02-with-offers-and-testimonials.jsx`
+- `page-examples/storefront-pages/03-with-image-tiles-and-feature-sections.jsx`
+- `page-examples/storefront-pages/04-with-overlapping-image-tiles-and-perks.jsx`

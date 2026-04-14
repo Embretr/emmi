@@ -1,0 +1,804 @@
+# Application UI blocks
+
+Base path: `ui-blocks/application/` — component files under `application/react/`.
+
+## How to use (AI)
+
+1. Pick a category below (or search filenames for keywords: hero, cart, table, etc.).
+2. `Read` the `.jsx` / `.tsx` file(s) as layout and Tailwind reference; adapt markup to the target app.
+
+**Total files:** 364
+
+## Category tree
+
+- **application-shells/** (23 components)
+  - **multi-column/** (6 components)
+    - `01-full-width-three-column.jsx`
+    - `02-full-width-secondary-column-on-right.jsx`
+    - `03-constrained-three-column.jsx`
+    - `04-constrained-with-sticky-columns.jsx`
+    - `05-full-width-with-narrow-sidebar.jsx`
+    - `06-full-width-with-narrow-sidebar-and-header.jsx`
+  - **sidebar/** (8 components)
+    - `01-simple-sidebar.jsx`
+    - `02-simple-dark-sidebar.jsx`
+    - `03-sidebar-with-header.jsx`
+    - `04-dark-sidebar-with-header.jsx`
+    - `05-with-constrained-content-area.jsx`
+    - `06-with-off-white-background.jsx`
+    - `07-simple-brand-sidebar.jsx`
+    - `08-brand-sidebar-with-header.jsx`
+  - **stacked/** (9 components)
+    - `01-with-bottom-border.jsx`
+    - `02-on-subtle-background.jsx`
+    - `03-with-lighter-page-header.jsx`
+    - `04-branded-nav-with-compact-lighter-page-header.jsx`
+    - `05-with-overlap.jsx`
+    - `06-brand-nav-with-overlap.jsx`
+    - `07-branded-nav-with-lighter-page-header.jsx`
+    - `08-with-compact-lighter-page-header.jsx`
+    - `09-two-row-navigation-with-overlap.jsx`
+- **data-display/** (19 components)
+  - **calendars/** (8 components)
+    - `01-small-with-meetings.jsx`
+    - `02-month-view.jsx`
+    - `03-week-view.jsx`
+    - `04-day-view.jsx`
+    - `05-year-view.jsx`
+    - `06-double.jsx`
+    - `07-borderless-stacked.jsx`
+    - `08-borderless-side-by-side.jsx`
+  - **description-lists/** (6 components)
+    - `01-left-aligned.jsx`
+    - `03-left-aligned-in-card.jsx`
+    - `04-left-aligned-striped.jsx`
+    - `05-two-column.jsx`
+    - `06-left-aligned-with-inline-actions.jsx`
+    - `06-narrow-with-hidden-labels.jsx`
+  - **stats/** (5 components)
+    - `01-with-trending.jsx`
+    - `02-simple.jsx`
+    - `03-simple-in-cards.jsx`
+    - `04-with-brand-icon.jsx`
+    - `05-with-shared-borders.jsx`
+- **elements/** (45 components)
+  - **avatars/** (11 components)
+    - `01-circular-avatars.jsx`
+    - `02-rounded-avatars.jsx`
+    - `03-circular-avatars-with-top-notification.jsx`
+    - `04-rounded-avatars-with-top-notification.jsx`
+    - `05-circular-avatars-with-bottom-notification.jsx`
+    - `06-rounded-avatars-with-bottom-notification.jsx`
+    - `07-circular-avatars-with-placeholder-icon.jsx`
+    - `08-circular-avatars-with-placeholder-initials.jsx`
+    - `09-avatar-group-stacked-bottom-to-top.jsx`
+    - `10-avatar-group-stacked-top-to-bottom.jsx`
+    - `11-with-text.jsx`
+  - **badges/** (16 components)
+    - `01-with-border.jsx`
+    - `03-with-border-and-dot.jsx`
+    - `05-pill-with-border.jsx`
+    - `06-pill-with-border-and-dot.jsx`
+    - `07-with-border-remove-button.jsx`
+    - `08-flat.jsx`
+    - `09-flat-pill.jsx`
+    - `10-flat-with-dot.jsx`
+    - `11-flat-pill-with-dot.jsx`
+    - `12-flat-with-remove-button.jsx`
+    - `13-small-with-border.jsx`
+    - `14-small-flat.jsx`
+    - `15-small-pill-with-border.jsx`
+    - `16-small-flat-pill.jsx`
+    - `17-small-flat-with-dot.jsx`
+    - `18-small-flat-pill-with-dot.jsx`
+  - **button-groups/** (5 components)
+    - `01-basic.jsx`
+    - `02-icon-only.jsx`
+    - `03-with-stat.jsx`
+    - `04-with-dropdown.jsx`
+    - `05-with-checkbox-and-dropdown.jsx`
+  - **buttons/** (8 components)
+    - `01-primary-buttons.jsx`
+    - `02-secondary-buttons.jsx`
+    - `05-soft-buttons.jsx`
+    - `06-buttons-with-leading-icon.jsx`
+    - `07-buttons-with-trailing-icon.jsx`
+    - `08-rounded-primary-buttons.jsx`
+    - `09-rounded-secondary-buttons.jsx`
+    - `10-circular-buttons.jsx`
+  - **dropdowns/** (5 components)
+    - `01-simple.jsx`
+    - `02-with-dividers.jsx`
+    - `03-with-icons.jsx`
+    - `04-with-minimal-menu-icon.jsx`
+    - `05-with-simple-header.jsx`
+- **feedback/** (12 components)
+  - **alerts/** (6 components)
+    - `01-with-description.jsx`
+    - `02-with-list.jsx`
+    - `03-with-actions.jsx`
+    - `04-with-link-on-right.jsx`
+    - `05-with-accent-border.jsx`
+    - `06-with-dismiss-button.jsx`
+  - **empty-states/** (6 components)
+    - `01-simple.jsx`
+    - `02-with-dashed-border.jsx`
+    - `03-with-starting-points.jsx`
+    - `04-with-recommendations.jsx`
+    - `05-with-templates.jsx`
+    - `06-with-recommendations-grid.jsx`
+- **forms/** (74 components)
+  - **action-panels/** (8 components)
+    - `01-simple.jsx`
+    - `02-with-link.jsx`
+    - `03-with-button-on-right.jsx`
+    - `04-with-button-at-top-right.jsx`
+    - `05-with-toggle.jsx`
+    - `06-with-input.jsx`
+    - `07-simple-well.jsx`
+    - `08-with-well.jsx`
+  - **checkboxes/** (4 components)
+    - `01-list-with-description.jsx`
+    - `02-list-with-inline-description.jsx`
+    - `03-list-with-checkbox-on-right.jsx`
+    - `04-simple-list-with-heading.jsx`
+  - **comboboxes/** (4 components)
+    - `01-simple.jsx`
+    - `03-with-status-indicator.jsx`
+    - `04-with-avatar.jsx`
+    - `05-with-secondary-text.jsx`
+  - **form-layouts/** (4 components)
+    - `01-stacked.jsx`
+    - `03-two-column.jsx`
+    - `04-two-column-with-cards.jsx`
+    - `05-labels-on-left.jsx`
+  - **input-groups/** (21 components)
+    - `01-input-with-label.jsx`
+    - `02-input-with-label-and-help-text.jsx`
+    - `03-input-with-validation-error.jsx`
+    - `04-input-with-disabled-state.jsx`
+    - `05-input-with-hidden-label.jsx`
+    - `06-input-with-corner-hint.jsx`
+    - `07-input-with-leading-icon.jsx`
+    - `08-input-with-trailing-icon.jsx`
+    - `09-input-with-add-on.jsx`
+    - `10-input-with-inline-add-on.jsx`
+    - `11-input-with-inline-leading-and-trailing-add-ons.jsx`
+    - `12-input-with-inline-leading-dropdown.jsx`
+    - `13-input-with-inline-leading-add-on-and-trailing-dropdown.jsx`
+    - `14-input-with-leading-icon-and-trailing-button.jsx`
+    - `15-inputs-with-shared-borders.jsx`
+    - `16-input-with-inset-label.jsx`
+    - `17-inputs-with-inset-labels-and-shared-borders.jsx`
+    - `18-input-with-overlapping-label.jsx`
+    - `19-input-with-pill-shape.jsx`
+    - `20-input-with-gray-background-and-bottom-border.jsx`
+    - `21-input-with-keyboard-shortcut.jsx`
+  - **radio-groups/** (12 components)
+    - `01-simple-list.jsx`
+    - `02-simple-inline-list.jsx`
+    - `03-list-with-description.jsx`
+    - `04-list-with-inline-description.jsx`
+    - `05-list-with-radio-on-right.jsx`
+    - `06-simple-list-with-radio-on-right.jsx`
+    - `07-simple-table.jsx`
+    - `08-list-with-descriptions-in-panel.jsx`
+    - `09-color-picker.jsx`
+    - `10-cards.jsx`
+    - `11-small-cards.jsx`
+    - `12-stacked-cards.jsx`
+  - **select-menus/** (7 components)
+    - `01-simple-native.jsx`
+    - `02-simple-custom.jsx`
+    - `03-custom-with-check-on-left.jsx`
+    - `04-custom-with-status-indicator.jsx`
+    - `05-custom-with-avatar.jsx`
+    - `06-with-secondary-text.jsx`
+    - `07-branded-with-supporting-text.jsx`
+  - **sign-in-forms/** (4 components)
+    - `01-simple.jsx`
+    - `03-simple-no-labels.jsx`
+    - `04-split-screen.jsx`
+    - `05-simple-card.jsx`
+  - **textareas/** (5 components)
+    - `01-simple.jsx`
+    - `02-with-avatar-and-actions.jsx`
+    - `03-with-underline-and-actions.jsx`
+    - `04-with-title-and-pill-actions.jsx`
+    - `05-with-preview-button.jsx`
+  - **toggles/** (5 components)
+    - `01-simple-toggle.jsx`
+    - `02-short-toggle.jsx`
+    - `03-toggle-with-icon.jsx`
+    - `04-with-left-label-and-description.jsx`
+    - `05-with-right-label.jsx`
+- **headings/** (25 components)
+  - **card-headings/** (6 components)
+    - `01-simple.jsx`
+    - `02-with-action.jsx`
+    - `03-with-avatar-and-actions.jsx`
+    - `04-with-description-and-action.jsx`
+    - `05-with-description.jsx`
+    - `06-with-avatar-meta-and-dropdown.jsx`
+  - **page-headings/** (9 components)
+    - `01-with-actions.jsx`
+    - `03-with-actions-and-breadcrumbs.jsx`
+    - `05-with-meta-and-actions.jsx`
+    - `07-with-banner-image.jsx`
+    - `08-with-avatar-and-actions.jsx`
+    - `09-card-with-avatar-and-stats.jsx`
+    - `10-with-meta-actions-and-breadcrumbs.jsx`
+    - `12-with-filters-and-action.jsx`
+    - `13-with-logo-meta-and-actions.jsx`
+  - **section-headings/** (10 components)
+    - `01-simple.jsx`
+    - `02-with-description.jsx`
+    - `03-with-actions.jsx`
+    - `04-with-action.jsx`
+    - `05-with-input-group.jsx`
+    - `06-with-tabs.jsx`
+    - `07-with-actions-and-tabs.jsx`
+    - `08-with-inline-tabs.jsx`
+    - `09-with-label.jsx`
+    - `10-with-badge-and-dropdown.jsx`
+- **layout/** (38 components)
+  - **cards/** (10 components)
+    - `01-basic-card.jsx`
+    - `02-card-edge-to-edge-on-mobile.jsx`
+    - `03-card-with-header.jsx`
+    - `04-card-with-footer.jsx`
+    - `05-card-with-header-and-footer.jsx`
+    - `06-card-with-gray-footer.jsx`
+    - `07-card-with-gray-body.jsx`
+    - `08-well.jsx`
+    - `09-well-on-gray.jsx`
+    - `10-well-edge-to-edge-on-mobile.jsx`
+  - **containers/** (5 components)
+    - `01-full-width-on-mobile-constrained-with-padded-content-above.jsx`
+    - `02-constrained-with-padded-content.jsx`
+    - `03-full-width-on-mobile-constrained-to-breakpoint-with-padded-content-above-mobile.jsx`
+    - `04-constrained-to-breakpoint-with-padded-content.jsx`
+    - `05-narrow-constrained-with-padded-content.jsx`
+  - **dividers/** (8 components)
+    - `01-with-label.jsx`
+    - `02-with-icon.jsx`
+    - `03-with-label-on-left.jsx`
+    - `04-with-title.jsx`
+    - `05-with-title-on-left.jsx`
+    - `06-with-button.jsx`
+    - `07-with-title-and-button.jsx`
+    - `08-with-toolbar.jsx`
+  - **list-containers/** (7 components)
+    - `01-simple-with-dividers.jsx`
+    - `02-card-with-dividers.jsx`
+    - `03-card-with-dividers-full-width-on-mobile.jsx`
+    - `04-separate-cards.jsx`
+    - `05-separate-cards-full-width-on-mobile.jsx`
+    - `06-flat-card-with-dividers.jsx`
+    - `07-simple-with-dividers-full-width-on-mobile.jsx`
+  - **media-objects/** (8 components)
+    - `01-basic.jsx`
+    - `02-aligned-to-center.jsx`
+    - `03-aligned-to-bottom.jsx`
+    - `04-stretched-to-fit.jsx`
+    - `05-media-on-right.jsx`
+    - `06-basic-responsive.jsx`
+    - `07-wide-responsive.jsx`
+    - `08-nested.jsx`
+- **lists/** (44 components)
+  - **feeds/** (3 components)
+    - `01-simple-with-icons.jsx`
+    - `02-with-comments.jsx`
+    - `03-with-multiple-item-types.jsx`
+  - **grid-lists/** (7 components)
+    - `01-contact-cards-with-small-portrait.jsx`
+    - `02-contact-cards.jsx`
+    - `03-simple-cards.jsx`
+    - `04-horizontal-link-cards.jsx`
+    - `05-actions-with-shared-borders.jsx`
+    - `06-images-with-details.jsx`
+    - `07-logos-cards-with-description-list.jsx`
+  - **stacked-lists/** (15 components)
+    - `01-simple.jsx`
+    - `03-with-links.jsx`
+    - `04-with-inline-links-and-avatar-group.jsx`
+    - `05-with-inline-links-and-actions-menu.jsx`
+    - `06-with-badges-button-and-actions-menu.jsx`
+    - `07-in-card-with-links.jsx`
+    - `08-two-columns-with-links.jsx`
+    - `09-full-width-with-links.jsx`
+    - `10-full-width-with-constrained-content.jsx`
+    - `11-narrow.jsx`
+    - `12-narrow-with-sticky-headings.jsx`
+    - `13-narrow-with-actions.jsx`
+    - `14-narrow-with-truncated-content.jsx`
+    - `15-narrow-with-small-avatars.jsx`
+    - `17-narrow-with-badges.jsx`
+  - **tables/** (19 components)
+    - `01-simple.jsx`
+    - `03-simple-in-card.jsx`
+    - `04-full-width.jsx`
+    - `04b-full-width-with-constrained-content.jsx`
+    - `05-with-striped-rows.jsx`
+    - `06-with-uppercase-headings.jsx`
+    - `07-with-stacked-columns-on-mobile.jsx`
+    - `08-with-hidden-columns-on-mobile.jsx`
+    - `09-with-avatars-and-multiline-content.jsx`
+    - `10-with-sticky-header.jsx`
+    - `11-with-vertical-lines.jsx`
+    - `12-with-condensed-content.jsx`
+    - `13-with-sortable-headings.jsx`
+    - `14-with-grouped-rows.jsx`
+    - `15-with-summary-rows.jsx`
+    - `16-with-border.jsx`
+    - `17-with-checkboxes.jsx`
+    - `18-with-hidden-headings.jsx`
+    - `19-full-width-with-avatars.jsx`
+- **navigation/** (54 components)
+  - **breadcrumbs/** (4 components)
+    - `01-contained.jsx`
+    - `02-full-width-bar.jsx`
+    - `03-simple-with-chevrons.jsx`
+    - `04-simple-with-slashes.jsx`
+  - **command-palettes/** (8 components)
+    - `01-simple.jsx`
+    - `02-simple-with-padding.jsx`
+    - `03-with-preview.jsx`
+    - `04-with-images-and-descriptions.jsx`
+    - `05-with-icons.jsx`
+    - `06-semi-transparent-with-icons.jsx`
+    - `08-with-groups.jsx`
+    - `09-with-footer.jsx`
+  - **navbars/** (11 components)
+    - `01-simple-dark-with-menu-button-on-left.jsx`
+    - `02-dark-with-quick-action.jsx`
+    - `03-simple-dark.jsx`
+    - `04-simple-with-menu-button-on-left.jsx`
+    - `05-simple.jsx`
+    - `06-with-quick-action.jsx`
+    - `07-dark-with-search.jsx`
+    - `08-with-search.jsx`
+    - `09-dark-with-centered-search-and-secondary-links.jsx`
+    - `10-with-centered-search-and-secondary-links.jsx`
+    - `11-with-search-in-column-layout.jsx`
+  - **pagination/** (3 components)
+    - `01-card-footer-with-page-buttons.jsx`
+    - `02-centered-page-numbers.jsx`
+    - `03-simple-card-footer.jsx`
+  - **progress-bars/** (8 components)
+    - `01-simple.jsx`
+    - `02-panels.jsx`
+    - `03-bullets.jsx`
+    - `04-panels-with-border.jsx`
+    - `05-circles.jsx`
+    - `06-bullets-and-text.jsx`
+    - `07-circles-with-text.jsx`
+    - `08-progress-bar.jsx`
+  - **sidebar-navigation/** (5 components)
+    - `01-light.jsx`
+    - `02-dark.jsx`
+    - `03-with-expandable-sections.jsx`
+    - `04-with-secondary-navigation.jsx`
+    - `05-brand.jsx`
+  - **tabs/** (9 components)
+    - `01-tabs-with-underline.jsx`
+    - `02-tabs-with-underline-and-icons.jsx`
+    - `03-tabs-in-pills.jsx`
+    - `04-tabs-in-pills-on-gray.jsx`
+    - `05-tabs-in-pills-with-brand-color.jsx`
+    - `06-full-width-tabs-with-underline.jsx`
+    - `07-bar-with-underline.jsx`
+    - `08-tabs-with-underline-and-badges.jsx`
+    - `09-simple.jsx`
+  - **vertical-navigation/** (6 components)
+    - `01-simple.jsx`
+    - `02-with-badges.jsx`
+    - `03-with-icons-and-badges.jsx`
+    - `04-with-icons.jsx`
+    - `05-with-secondary-navigation.jsx`
+    - `06-on-gray.jsx`
+- **overlays/** (24 components)
+  - **drawers/** (12 components)
+    - `01-empty.jsx`
+    - `01a-empty-wide.jsx`
+    - `02-with-background-overlay.jsx`
+    - `03-with-close-button-on-outside.jsx`
+    - `04-with-branded-header.jsx`
+    - `05-with-sticky-footer.jsx`
+    - `06-create-project-form-example.jsx`
+    - `06a-wide-create-project-form-example.jsx`
+    - `07-user-profile-example.jsx`
+    - `07a-wide-user-profile-example.jsx`
+    - `08-contact-list-example.jsx`
+    - `09-file-details-example.jsx`
+  - **modal-dialogs/** (6 components)
+    - `01-centered-with-single-action.jsx`
+    - `02-centered-with-wide-buttons.jsx`
+    - `03-simple-alert.jsx`
+    - `04-simple-with-dismiss-button.jsx`
+    - `05-simple-with-gray-footer.jsx`
+    - `06-simple-with-left-aligned-buttons.jsx`
+  - **notifications/** (6 components)
+    - `01-simple.jsx`
+    - `02-condensed.jsx`
+    - `03-with-actions-below.jsx`
+    - `04-with-avatar.jsx`
+    - `05-with-split-buttons.jsx`
+    - `06-with-buttons-below.jsx`
+- **page-examples/** (6 components)
+  - **detail-screens/** (2 components)
+    - `01-sidebar.jsx`
+    - `02-stacked.jsx`
+  - **home-screens/** (2 components)
+    - `01-sidebar.jsx`
+    - `02-stacked.jsx`
+  - **settings-screens/** (2 components)
+    - `01-sidebar.jsx`
+    - `02-stacked.jsx`
+
+## All files (flat)
+
+- `application-shells/multi-column/01-full-width-three-column.jsx`
+- `application-shells/multi-column/02-full-width-secondary-column-on-right.jsx`
+- `application-shells/multi-column/03-constrained-three-column.jsx`
+- `application-shells/multi-column/04-constrained-with-sticky-columns.jsx`
+- `application-shells/multi-column/05-full-width-with-narrow-sidebar.jsx`
+- `application-shells/multi-column/06-full-width-with-narrow-sidebar-and-header.jsx`
+- `application-shells/sidebar/01-simple-sidebar.jsx`
+- `application-shells/sidebar/02-simple-dark-sidebar.jsx`
+- `application-shells/sidebar/03-sidebar-with-header.jsx`
+- `application-shells/sidebar/04-dark-sidebar-with-header.jsx`
+- `application-shells/sidebar/05-with-constrained-content-area.jsx`
+- `application-shells/sidebar/06-with-off-white-background.jsx`
+- `application-shells/sidebar/07-simple-brand-sidebar.jsx`
+- `application-shells/sidebar/08-brand-sidebar-with-header.jsx`
+- `application-shells/stacked/01-with-bottom-border.jsx`
+- `application-shells/stacked/02-on-subtle-background.jsx`
+- `application-shells/stacked/03-with-lighter-page-header.jsx`
+- `application-shells/stacked/04-branded-nav-with-compact-lighter-page-header.jsx`
+- `application-shells/stacked/05-with-overlap.jsx`
+- `application-shells/stacked/06-brand-nav-with-overlap.jsx`
+- `application-shells/stacked/07-branded-nav-with-lighter-page-header.jsx`
+- `application-shells/stacked/08-with-compact-lighter-page-header.jsx`
+- `application-shells/stacked/09-two-row-navigation-with-overlap.jsx`
+- `data-display/calendars/01-small-with-meetings.jsx`
+- `data-display/calendars/02-month-view.jsx`
+- `data-display/calendars/03-week-view.jsx`
+- `data-display/calendars/04-day-view.jsx`
+- `data-display/calendars/05-year-view.jsx`
+- `data-display/calendars/06-double.jsx`
+- `data-display/calendars/07-borderless-stacked.jsx`
+- `data-display/calendars/08-borderless-side-by-side.jsx`
+- `data-display/description-lists/01-left-aligned.jsx`
+- `data-display/description-lists/03-left-aligned-in-card.jsx`
+- `data-display/description-lists/04-left-aligned-striped.jsx`
+- `data-display/description-lists/05-two-column.jsx`
+- `data-display/description-lists/06-left-aligned-with-inline-actions.jsx`
+- `data-display/description-lists/06-narrow-with-hidden-labels.jsx`
+- `data-display/stats/01-with-trending.jsx`
+- `data-display/stats/02-simple.jsx`
+- `data-display/stats/03-simple-in-cards.jsx`
+- `data-display/stats/04-with-brand-icon.jsx`
+- `data-display/stats/05-with-shared-borders.jsx`
+- `elements/avatars/01-circular-avatars.jsx`
+- `elements/avatars/02-rounded-avatars.jsx`
+- `elements/avatars/03-circular-avatars-with-top-notification.jsx`
+- `elements/avatars/04-rounded-avatars-with-top-notification.jsx`
+- `elements/avatars/05-circular-avatars-with-bottom-notification.jsx`
+- `elements/avatars/06-rounded-avatars-with-bottom-notification.jsx`
+- `elements/avatars/07-circular-avatars-with-placeholder-icon.jsx`
+- `elements/avatars/08-circular-avatars-with-placeholder-initials.jsx`
+- `elements/avatars/09-avatar-group-stacked-bottom-to-top.jsx`
+- `elements/avatars/10-avatar-group-stacked-top-to-bottom.jsx`
+- `elements/avatars/11-with-text.jsx`
+- `elements/badges/01-with-border.jsx`
+- `elements/badges/03-with-border-and-dot.jsx`
+- `elements/badges/05-pill-with-border.jsx`
+- `elements/badges/06-pill-with-border-and-dot.jsx`
+- `elements/badges/07-with-border-remove-button.jsx`
+- `elements/badges/08-flat.jsx`
+- `elements/badges/09-flat-pill.jsx`
+- `elements/badges/10-flat-with-dot.jsx`
+- `elements/badges/11-flat-pill-with-dot.jsx`
+- `elements/badges/12-flat-with-remove-button.jsx`
+- `elements/badges/13-small-with-border.jsx`
+- `elements/badges/14-small-flat.jsx`
+- `elements/badges/15-small-pill-with-border.jsx`
+- `elements/badges/16-small-flat-pill.jsx`
+- `elements/badges/17-small-flat-with-dot.jsx`
+- `elements/badges/18-small-flat-pill-with-dot.jsx`
+- `elements/button-groups/01-basic.jsx`
+- `elements/button-groups/02-icon-only.jsx`
+- `elements/button-groups/03-with-stat.jsx`
+- `elements/button-groups/04-with-dropdown.jsx`
+- `elements/button-groups/05-with-checkbox-and-dropdown.jsx`
+- `elements/buttons/01-primary-buttons.jsx`
+- `elements/buttons/02-secondary-buttons.jsx`
+- `elements/buttons/05-soft-buttons.jsx`
+- `elements/buttons/06-buttons-with-leading-icon.jsx`
+- `elements/buttons/07-buttons-with-trailing-icon.jsx`
+- `elements/buttons/08-rounded-primary-buttons.jsx`
+- `elements/buttons/09-rounded-secondary-buttons.jsx`
+- `elements/buttons/10-circular-buttons.jsx`
+- `elements/dropdowns/01-simple.jsx`
+- `elements/dropdowns/02-with-dividers.jsx`
+- `elements/dropdowns/03-with-icons.jsx`
+- `elements/dropdowns/04-with-minimal-menu-icon.jsx`
+- `elements/dropdowns/05-with-simple-header.jsx`
+- `feedback/alerts/01-with-description.jsx`
+- `feedback/alerts/02-with-list.jsx`
+- `feedback/alerts/03-with-actions.jsx`
+- `feedback/alerts/04-with-link-on-right.jsx`
+- `feedback/alerts/05-with-accent-border.jsx`
+- `feedback/alerts/06-with-dismiss-button.jsx`
+- `feedback/empty-states/01-simple.jsx`
+- `feedback/empty-states/02-with-dashed-border.jsx`
+- `feedback/empty-states/03-with-starting-points.jsx`
+- `feedback/empty-states/04-with-recommendations.jsx`
+- `feedback/empty-states/05-with-templates.jsx`
+- `feedback/empty-states/06-with-recommendations-grid.jsx`
+- `forms/action-panels/01-simple.jsx`
+- `forms/action-panels/02-with-link.jsx`
+- `forms/action-panels/03-with-button-on-right.jsx`
+- `forms/action-panels/04-with-button-at-top-right.jsx`
+- `forms/action-panels/05-with-toggle.jsx`
+- `forms/action-panels/06-with-input.jsx`
+- `forms/action-panels/07-simple-well.jsx`
+- `forms/action-panels/08-with-well.jsx`
+- `forms/checkboxes/01-list-with-description.jsx`
+- `forms/checkboxes/02-list-with-inline-description.jsx`
+- `forms/checkboxes/03-list-with-checkbox-on-right.jsx`
+- `forms/checkboxes/04-simple-list-with-heading.jsx`
+- `forms/comboboxes/01-simple.jsx`
+- `forms/comboboxes/03-with-status-indicator.jsx`
+- `forms/comboboxes/04-with-avatar.jsx`
+- `forms/comboboxes/05-with-secondary-text.jsx`
+- `forms/form-layouts/01-stacked.jsx`
+- `forms/form-layouts/03-two-column.jsx`
+- `forms/form-layouts/04-two-column-with-cards.jsx`
+- `forms/form-layouts/05-labels-on-left.jsx`
+- `forms/input-groups/01-input-with-label.jsx`
+- `forms/input-groups/02-input-with-label-and-help-text.jsx`
+- `forms/input-groups/03-input-with-validation-error.jsx`
+- `forms/input-groups/04-input-with-disabled-state.jsx`
+- `forms/input-groups/05-input-with-hidden-label.jsx`
+- `forms/input-groups/06-input-with-corner-hint.jsx`
+- `forms/input-groups/07-input-with-leading-icon.jsx`
+- `forms/input-groups/08-input-with-trailing-icon.jsx`
+- `forms/input-groups/09-input-with-add-on.jsx`
+- `forms/input-groups/10-input-with-inline-add-on.jsx`
+- `forms/input-groups/11-input-with-inline-leading-and-trailing-add-ons.jsx`
+- `forms/input-groups/12-input-with-inline-leading-dropdown.jsx`
+- `forms/input-groups/13-input-with-inline-leading-add-on-and-trailing-dropdown.jsx`
+- `forms/input-groups/14-input-with-leading-icon-and-trailing-button.jsx`
+- `forms/input-groups/15-inputs-with-shared-borders.jsx`
+- `forms/input-groups/16-input-with-inset-label.jsx`
+- `forms/input-groups/17-inputs-with-inset-labels-and-shared-borders.jsx`
+- `forms/input-groups/18-input-with-overlapping-label.jsx`
+- `forms/input-groups/19-input-with-pill-shape.jsx`
+- `forms/input-groups/20-input-with-gray-background-and-bottom-border.jsx`
+- `forms/input-groups/21-input-with-keyboard-shortcut.jsx`
+- `forms/radio-groups/01-simple-list.jsx`
+- `forms/radio-groups/02-simple-inline-list.jsx`
+- `forms/radio-groups/03-list-with-description.jsx`
+- `forms/radio-groups/04-list-with-inline-description.jsx`
+- `forms/radio-groups/05-list-with-radio-on-right.jsx`
+- `forms/radio-groups/06-simple-list-with-radio-on-right.jsx`
+- `forms/radio-groups/07-simple-table.jsx`
+- `forms/radio-groups/08-list-with-descriptions-in-panel.jsx`
+- `forms/radio-groups/09-color-picker.jsx`
+- `forms/radio-groups/10-cards.jsx`
+- `forms/radio-groups/11-small-cards.jsx`
+- `forms/radio-groups/12-stacked-cards.jsx`
+- `forms/select-menus/01-simple-native.jsx`
+- `forms/select-menus/02-simple-custom.jsx`
+- `forms/select-menus/03-custom-with-check-on-left.jsx`
+- `forms/select-menus/04-custom-with-status-indicator.jsx`
+- `forms/select-menus/05-custom-with-avatar.jsx`
+- `forms/select-menus/06-with-secondary-text.jsx`
+- `forms/select-menus/07-branded-with-supporting-text.jsx`
+- `forms/sign-in-forms/01-simple.jsx`
+- `forms/sign-in-forms/03-simple-no-labels.jsx`
+- `forms/sign-in-forms/04-split-screen.jsx`
+- `forms/sign-in-forms/05-simple-card.jsx`
+- `forms/textareas/01-simple.jsx`
+- `forms/textareas/02-with-avatar-and-actions.jsx`
+- `forms/textareas/03-with-underline-and-actions.jsx`
+- `forms/textareas/04-with-title-and-pill-actions.jsx`
+- `forms/textareas/05-with-preview-button.jsx`
+- `forms/toggles/01-simple-toggle.jsx`
+- `forms/toggles/02-short-toggle.jsx`
+- `forms/toggles/03-toggle-with-icon.jsx`
+- `forms/toggles/04-with-left-label-and-description.jsx`
+- `forms/toggles/05-with-right-label.jsx`
+- `headings/card-headings/01-simple.jsx`
+- `headings/card-headings/02-with-action.jsx`
+- `headings/card-headings/03-with-avatar-and-actions.jsx`
+- `headings/card-headings/04-with-description-and-action.jsx`
+- `headings/card-headings/05-with-description.jsx`
+- `headings/card-headings/06-with-avatar-meta-and-dropdown.jsx`
+- `headings/page-headings/01-with-actions.jsx`
+- `headings/page-headings/03-with-actions-and-breadcrumbs.jsx`
+- `headings/page-headings/05-with-meta-and-actions.jsx`
+- `headings/page-headings/07-with-banner-image.jsx`
+- `headings/page-headings/08-with-avatar-and-actions.jsx`
+- `headings/page-headings/09-card-with-avatar-and-stats.jsx`
+- `headings/page-headings/10-with-meta-actions-and-breadcrumbs.jsx`
+- `headings/page-headings/12-with-filters-and-action.jsx`
+- `headings/page-headings/13-with-logo-meta-and-actions.jsx`
+- `headings/section-headings/01-simple.jsx`
+- `headings/section-headings/02-with-description.jsx`
+- `headings/section-headings/03-with-actions.jsx`
+- `headings/section-headings/04-with-action.jsx`
+- `headings/section-headings/05-with-input-group.jsx`
+- `headings/section-headings/06-with-tabs.jsx`
+- `headings/section-headings/07-with-actions-and-tabs.jsx`
+- `headings/section-headings/08-with-inline-tabs.jsx`
+- `headings/section-headings/09-with-label.jsx`
+- `headings/section-headings/10-with-badge-and-dropdown.jsx`
+- `layout/cards/01-basic-card.jsx`
+- `layout/cards/02-card-edge-to-edge-on-mobile.jsx`
+- `layout/cards/03-card-with-header.jsx`
+- `layout/cards/04-card-with-footer.jsx`
+- `layout/cards/05-card-with-header-and-footer.jsx`
+- `layout/cards/06-card-with-gray-footer.jsx`
+- `layout/cards/07-card-with-gray-body.jsx`
+- `layout/cards/08-well.jsx`
+- `layout/cards/09-well-on-gray.jsx`
+- `layout/cards/10-well-edge-to-edge-on-mobile.jsx`
+- `layout/containers/01-full-width-on-mobile-constrained-with-padded-content-above.jsx`
+- `layout/containers/02-constrained-with-padded-content.jsx`
+- `layout/containers/03-full-width-on-mobile-constrained-to-breakpoint-with-padded-content-above-mobile.jsx`
+- `layout/containers/04-constrained-to-breakpoint-with-padded-content.jsx`
+- `layout/containers/05-narrow-constrained-with-padded-content.jsx`
+- `layout/dividers/01-with-label.jsx`
+- `layout/dividers/02-with-icon.jsx`
+- `layout/dividers/03-with-label-on-left.jsx`
+- `layout/dividers/04-with-title.jsx`
+- `layout/dividers/05-with-title-on-left.jsx`
+- `layout/dividers/06-with-button.jsx`
+- `layout/dividers/07-with-title-and-button.jsx`
+- `layout/dividers/08-with-toolbar.jsx`
+- `layout/list-containers/01-simple-with-dividers.jsx`
+- `layout/list-containers/02-card-with-dividers.jsx`
+- `layout/list-containers/03-card-with-dividers-full-width-on-mobile.jsx`
+- `layout/list-containers/04-separate-cards.jsx`
+- `layout/list-containers/05-separate-cards-full-width-on-mobile.jsx`
+- `layout/list-containers/06-flat-card-with-dividers.jsx`
+- `layout/list-containers/07-simple-with-dividers-full-width-on-mobile.jsx`
+- `layout/media-objects/01-basic.jsx`
+- `layout/media-objects/02-aligned-to-center.jsx`
+- `layout/media-objects/03-aligned-to-bottom.jsx`
+- `layout/media-objects/04-stretched-to-fit.jsx`
+- `layout/media-objects/05-media-on-right.jsx`
+- `layout/media-objects/06-basic-responsive.jsx`
+- `layout/media-objects/07-wide-responsive.jsx`
+- `layout/media-objects/08-nested.jsx`
+- `lists/feeds/01-simple-with-icons.jsx`
+- `lists/feeds/02-with-comments.jsx`
+- `lists/feeds/03-with-multiple-item-types.jsx`
+- `lists/grid-lists/01-contact-cards-with-small-portrait.jsx`
+- `lists/grid-lists/02-contact-cards.jsx`
+- `lists/grid-lists/03-simple-cards.jsx`
+- `lists/grid-lists/04-horizontal-link-cards.jsx`
+- `lists/grid-lists/05-actions-with-shared-borders.jsx`
+- `lists/grid-lists/06-images-with-details.jsx`
+- `lists/grid-lists/07-logos-cards-with-description-list.jsx`
+- `lists/stacked-lists/01-simple.jsx`
+- `lists/stacked-lists/03-with-links.jsx`
+- `lists/stacked-lists/04-with-inline-links-and-avatar-group.jsx`
+- `lists/stacked-lists/05-with-inline-links-and-actions-menu.jsx`
+- `lists/stacked-lists/06-with-badges-button-and-actions-menu.jsx`
+- `lists/stacked-lists/07-in-card-with-links.jsx`
+- `lists/stacked-lists/08-two-columns-with-links.jsx`
+- `lists/stacked-lists/09-full-width-with-links.jsx`
+- `lists/stacked-lists/10-full-width-with-constrained-content.jsx`
+- `lists/stacked-lists/11-narrow.jsx`
+- `lists/stacked-lists/12-narrow-with-sticky-headings.jsx`
+- `lists/stacked-lists/13-narrow-with-actions.jsx`
+- `lists/stacked-lists/14-narrow-with-truncated-content.jsx`
+- `lists/stacked-lists/15-narrow-with-small-avatars.jsx`
+- `lists/stacked-lists/17-narrow-with-badges.jsx`
+- `lists/tables/01-simple.jsx`
+- `lists/tables/03-simple-in-card.jsx`
+- `lists/tables/04-full-width.jsx`
+- `lists/tables/04b-full-width-with-constrained-content.jsx`
+- `lists/tables/05-with-striped-rows.jsx`
+- `lists/tables/06-with-uppercase-headings.jsx`
+- `lists/tables/07-with-stacked-columns-on-mobile.jsx`
+- `lists/tables/08-with-hidden-columns-on-mobile.jsx`
+- `lists/tables/09-with-avatars-and-multiline-content.jsx`
+- `lists/tables/10-with-sticky-header.jsx`
+- `lists/tables/11-with-vertical-lines.jsx`
+- `lists/tables/12-with-condensed-content.jsx`
+- `lists/tables/13-with-sortable-headings.jsx`
+- `lists/tables/14-with-grouped-rows.jsx`
+- `lists/tables/15-with-summary-rows.jsx`
+- `lists/tables/16-with-border.jsx`
+- `lists/tables/17-with-checkboxes.jsx`
+- `lists/tables/18-with-hidden-headings.jsx`
+- `lists/tables/19-full-width-with-avatars.jsx`
+- `navigation/breadcrumbs/01-contained.jsx`
+- `navigation/breadcrumbs/02-full-width-bar.jsx`
+- `navigation/breadcrumbs/03-simple-with-chevrons.jsx`
+- `navigation/breadcrumbs/04-simple-with-slashes.jsx`
+- `navigation/command-palettes/01-simple.jsx`
+- `navigation/command-palettes/02-simple-with-padding.jsx`
+- `navigation/command-palettes/03-with-preview.jsx`
+- `navigation/command-palettes/04-with-images-and-descriptions.jsx`
+- `navigation/command-palettes/05-with-icons.jsx`
+- `navigation/command-palettes/06-semi-transparent-with-icons.jsx`
+- `navigation/command-palettes/08-with-groups.jsx`
+- `navigation/command-palettes/09-with-footer.jsx`
+- `navigation/navbars/01-simple-dark-with-menu-button-on-left.jsx`
+- `navigation/navbars/02-dark-with-quick-action.jsx`
+- `navigation/navbars/03-simple-dark.jsx`
+- `navigation/navbars/04-simple-with-menu-button-on-left.jsx`
+- `navigation/navbars/05-simple.jsx`
+- `navigation/navbars/06-with-quick-action.jsx`
+- `navigation/navbars/07-dark-with-search.jsx`
+- `navigation/navbars/08-with-search.jsx`
+- `navigation/navbars/09-dark-with-centered-search-and-secondary-links.jsx`
+- `navigation/navbars/10-with-centered-search-and-secondary-links.jsx`
+- `navigation/navbars/11-with-search-in-column-layout.jsx`
+- `navigation/pagination/01-card-footer-with-page-buttons.jsx`
+- `navigation/pagination/02-centered-page-numbers.jsx`
+- `navigation/pagination/03-simple-card-footer.jsx`
+- `navigation/progress-bars/01-simple.jsx`
+- `navigation/progress-bars/02-panels.jsx`
+- `navigation/progress-bars/03-bullets.jsx`
+- `navigation/progress-bars/04-panels-with-border.jsx`
+- `navigation/progress-bars/05-circles.jsx`
+- `navigation/progress-bars/06-bullets-and-text.jsx`
+- `navigation/progress-bars/07-circles-with-text.jsx`
+- `navigation/progress-bars/08-progress-bar.jsx`
+- `navigation/sidebar-navigation/01-light.jsx`
+- `navigation/sidebar-navigation/02-dark.jsx`
+- `navigation/sidebar-navigation/03-with-expandable-sections.jsx`
+- `navigation/sidebar-navigation/04-with-secondary-navigation.jsx`
+- `navigation/sidebar-navigation/05-brand.jsx`
+- `navigation/tabs/01-tabs-with-underline.jsx`
+- `navigation/tabs/02-tabs-with-underline-and-icons.jsx`
+- `navigation/tabs/03-tabs-in-pills.jsx`
+- `navigation/tabs/04-tabs-in-pills-on-gray.jsx`
+- `navigation/tabs/05-tabs-in-pills-with-brand-color.jsx`
+- `navigation/tabs/06-full-width-tabs-with-underline.jsx`
+- `navigation/tabs/07-bar-with-underline.jsx`
+- `navigation/tabs/08-tabs-with-underline-and-badges.jsx`
+- `navigation/tabs/09-simple.jsx`
+- `navigation/vertical-navigation/01-simple.jsx`
+- `navigation/vertical-navigation/02-with-badges.jsx`
+- `navigation/vertical-navigation/03-with-icons-and-badges.jsx`
+- `navigation/vertical-navigation/04-with-icons.jsx`
+- `navigation/vertical-navigation/05-with-secondary-navigation.jsx`
+- `navigation/vertical-navigation/06-on-gray.jsx`
+- `overlays/drawers/01-empty.jsx`
+- `overlays/drawers/01a-empty-wide.jsx`
+- `overlays/drawers/02-with-background-overlay.jsx`
+- `overlays/drawers/03-with-close-button-on-outside.jsx`
+- `overlays/drawers/04-with-branded-header.jsx`
+- `overlays/drawers/05-with-sticky-footer.jsx`
+- `overlays/drawers/06-create-project-form-example.jsx`
+- `overlays/drawers/06a-wide-create-project-form-example.jsx`
+- `overlays/drawers/07-user-profile-example.jsx`
+- `overlays/drawers/07a-wide-user-profile-example.jsx`
+- `overlays/drawers/08-contact-list-example.jsx`
+- `overlays/drawers/09-file-details-example.jsx`
+- `overlays/modal-dialogs/01-centered-with-single-action.jsx`
+- `overlays/modal-dialogs/02-centered-with-wide-buttons.jsx`
+- `overlays/modal-dialogs/03-simple-alert.jsx`
+- `overlays/modal-dialogs/04-simple-with-dismiss-button.jsx`
+- `overlays/modal-dialogs/05-simple-with-gray-footer.jsx`
+- `overlays/modal-dialogs/06-simple-with-left-aligned-buttons.jsx`
+- `overlays/notifications/01-simple.jsx`
+- `overlays/notifications/02-condensed.jsx`
+- `overlays/notifications/03-with-actions-below.jsx`
+- `overlays/notifications/04-with-avatar.jsx`
+- `overlays/notifications/05-with-split-buttons.jsx`
+- `overlays/notifications/06-with-buttons-below.jsx`
+- `page-examples/detail-screens/01-sidebar.jsx`
+- `page-examples/detail-screens/02-stacked.jsx`
+- `page-examples/home-screens/01-sidebar.jsx`
+- `page-examples/home-screens/02-stacked.jsx`
+- `page-examples/settings-screens/01-sidebar.jsx`
+- `page-examples/settings-screens/02-stacked.jsx`

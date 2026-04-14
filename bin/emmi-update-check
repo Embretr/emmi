@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+VER="$(tr -d ' \n' < VERSION 2>/dev/null || echo 0)"
+git rev-parse --git-dir >/dev/null 2>&1 || { echo "NO_GIT"; exit 0; }
+git fetch origin 2>/dev/null || true
+UPSTREAM=""
+git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1 && UPSTREAM="@{u}" || true
+if [[ -z "$UPSTREAM" ]]; then
+  for b in origin/main origin/master; do
+    git rev-parse "$b" >/dev/null 2>&1 && UPSTREAM="$b" && break
+  done
+fi
+[[ -z "$UPSTREAM" ]] && { echo "NO_UPSTREAM"; exit 0; }
+LOCAL="$(git rev-parse HEAD 2>/dev/null || true)"
+REMOTE="$(git rev-parse "$UPSTREAM" 2>/dev/null || true)"
+if [[ -n "$LOCAL" && -n "$REMOTE" && "$LOCAL" != "$REMOTE" ]]; then
+  echo "UPGRADE_AVAILABLE local=$VER upstream=$UPSTREAM (pull to update)"
+fi

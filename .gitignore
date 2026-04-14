@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+.env
+.env.*
+
+# Person-specific; keep only README in git
+rules/**
+!rules/README.md
+evaluators/**
+!evaluators/README.md

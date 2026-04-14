@@ -1,0 +1,401 @@
+# Marketing UI blocks
+
+Base path: `ui-blocks/marketing/` — component files under `marketing/react/`.
+
+## How to use (AI)
+
+1. Pick a category below (or search filenames for keywords: hero, cart, table, etc.).
+2. `Read` the `.jsx` / `.tsx` file(s) as layout and Tailwind reference; adapt markup to the target app.
+
+**Total files:** 179
+
+## Category tree
+
+- **elements/** (31 components)
+  - **banners/** (13 components)
+    - `01-with-button.jsx`
+    - `02-on-dark.jsx`
+    - `03-on-brand.jsx`
+    - `04-with-background-glow.jsx`
+    - `05-with-link.jsx`
+    - `06-left-aligned.jsx`
+    - `07-bottom-aligned.jsx`
+    - `08-floating-at-bottom.jsx`
+    - `09-floating-at-bottom-centered.jsx`
+    - `10-privacy-notice-right-aligned.jsx`
+    - `11-privacy-notice-centered.jsx`
+    - `12-privacy-notice-left-aligned.jsx`
+    - `13-privacy-notice-full-width.jsx`
+  - **flyout-menus/** (7 components)
+    - `01-stacked-with-footer-actions.jsx`
+    - `02-full-width-two-columns.jsx`
+    - `03-stacked-with-footer-list.jsx`
+    - `04-full-width.jsx`
+    - `05-simple-with-descriptions.jsx`
+    - `06-two-column.jsx`
+    - `07-simple.jsx`
+  - **headers/** (11 components)
+    - `01-with-stacked-flyout-menu.jsx`
+    - `02-constrained.jsx`
+    - `04-on-brand-background.jsx`
+    - `05-with-full-width-flyout-menu.jsx`
+    - `06-full-width.jsx`
+    - `07-with-call-to-action.jsx`
+    - `08-with-multiple-flyout-menus.jsx`
+    - `09-with-icons-in-mobile-menu.jsx`
+    - `10-with-left-aligned-nav.jsx`
+    - `11-with-right-aligned-nav.jsx`
+    - `12-with-centered-logo.jsx`
+- **feedback/** (5 components)
+  - **404-pages/** (5 components)
+    - `01-simple.jsx`
+    - `02-split-with-image.jsx`
+    - `03-with-popular-pages.jsx`
+    - `05-with-background-image.jsx`
+    - `06-with-navbar-and-footer.jsx`
+- **page-examples/** (10 components)
+  - **about-pages/** (3 components)
+    - `01-with-image-tiles.jsx`
+    - `02-with-timeline-and-stats.jsx`
+    - `03-with-two-column-description.jsx`
+  - **landing-pages/** (4 components)
+    - `01-with-screenshots-and-stats.jsx`
+    - `02-with-large-screenshot-and-testimonial.jsx`
+    - `03-with-background-image-hero-and-pricing-section.jsx`
+    - `04-with-mobile-screenshot-and-testimonials-grid.jsx`
+  - **pricing-pages/** (3 components)
+    - `01-with-four-tiers.jsx`
+    - `02-with-comparison-table.jsx`
+    - `03-with-three-tiers-and-testimonials.jsx`
+- **sections/** (133 components)
+  - **bento-grids/** (3 components)
+    - `01-three-column-bento-grid.jsx`
+    - `02-two-row-bento-grid.jsx`
+    - `03-two-row-bento-grid-with-three-column-second-row.jsx`
+  - **blog-sections/** (7 components)
+    - `01-three-column.jsx`
+    - `02-three-column-with-images.jsx`
+    - `03-three-column-with-background-images.jsx`
+    - `04-single-column.jsx`
+    - `05-single-column-with-images.jsx`
+    - `06-with-featured-post.jsx`
+    - `07-with-photo-and-list.jsx`
+  - **contact-sections/** (7 components)
+    - `01-centered.jsx`
+    - `02-side-by-side-grid.jsx`
+    - `03-split-with-pattern.jsx`
+    - `05-simple-four-column.jsx`
+    - `06-simple-centered.jsx`
+    - `07-with-testimonial.jsx`
+    - `08-split-with-image.jsx`
+  - **content-sections/** (7 components)
+    - `01-with-sticky-product-screenshot.jsx`
+    - `02-with-testimonial.jsx`
+    - `03-with-image-tiles.jsx`
+    - `04-two-columns-with-screenshot.jsx`
+    - `05-with-testimonial-and-stats.jsx`
+    - `06-split-with-image.jsx`
+    - `07-centered.jsx`
+  - **cta-sections/** (11 components)
+    - `01-dark-panel-with-app-screenshot.jsx`
+    - `02-simple-stacked.jsx`
+    - `03-centered-on-dark-panel.jsx`
+    - `04-simple-centered.jsx`
+    - `05-simple-centered-with-gradient.jsx`
+    - `06-simple-centered-on-brand.jsx`
+    - `07-simple-justified.jsx`
+    - `08-simple-justified-on-subtle-brand.jsx`
+    - `09-split-with-image.jsx`
+    - `10-two-columns-with-photo.jsx`
+    - `11-with-image-tiles.jsx`
+  - **faq-sections/** (7 components)
+    - `01-offset-with-supporting-text.jsx`
+    - `02-centered-accordion.jsx`
+    - `04-side-by-side.jsx`
+    - `05-three-columns.jsx`
+    - `07-three-columns-with-centered-introduction.jsx`
+    - `08-two-columns.jsx`
+    - `10-two-columns-with-centered-introduction.jsx`
+  - **feature-sections/** (15 components)
+    - `01.with-product-screenshot.jsx`
+    - `03.with-large-screenshot.jsx`
+    - `05.with-large-bordered-screenshot.jsx`
+    - `07.simple-three-column-with-small-icons.jsx`
+    - `09.with-product-screenshot-on-left.jsx`
+    - `10.simple-three-column-with-large-icons.jsx`
+    - `12.contained-in-panel.jsx`
+    - `13.with-product-screenshot-panel.jsx`
+    - `14.with-testimonial.jsx`
+    - `15.offset-2x2-grid.jsx`
+    - `16.with-code-example-panel.jsx`
+    - `17.offset-with-feature-list.jsx`
+    - `18.simple.jsx`
+    - `19.centered-2x2-grid.jsx`
+    - `20.simple-3x2-grid.jsx`
+  - **footers/** (7 components)
+    - `02-4-column-with-company-mission.jsx`
+    - `04-4-column-with-call-to-action.jsx`
+    - `06-4-column-simple.jsx`
+    - `08-4-column-with-newsletter.jsx`
+    - `10-4-column-with-newsletter-below.jsx`
+    - `12-simple-centered.jsx`
+    - `14-simple-with-social-links.jsx`
+  - **header/** (8 components)
+    - `01-with-stats.jsx`
+    - `02-centered.jsx`
+    - `03-centered-with-eyebrow.jsx`
+    - `04-with-cards.jsx`
+    - `05-simple.jsx`
+    - `06-simple-with-eyebrow.jsx`
+    - `07-simple-with-background-image.jsx`
+    - `08-centered-with-background-image.jsx`
+  - **heroes/** (12 components)
+    - `01-simple-centered.jsx`
+    - `02-split-with-screenshot.jsx`
+    - `03-split-with-bordered-screenshot.jsx`
+    - `04-split-with-code-example.jsx`
+    - `05-simple-centered-with-background-image.jsx`
+    - `06-with-bordered-app-screenshot.jsx`
+    - `07-with-app-screenshot.jsx`
+    - `08-with-phone-mockup.jsx`
+    - `09-split-with-image.jsx`
+    - `10-with-angled-image-on-right.jsx`
+    - `11-with-image-tiles.jsx`
+    - `12-with-offset-image.jsx`
+  - **logo-clouds/** (6 components)
+    - `01-simple-with-heading.jsx`
+    - `03-simple-with-call-to-action.jsx`
+    - `05-simple-left-aligned.jsx`
+    - `07-split-with-logos-on-right.jsx`
+    - `09-simple.jsx`
+    - `11-grid.jsx`
+  - **newsletter-sections/** (6 components)
+    - `01-side-by-side-with-details.jsx`
+    - `02-simple-side-by-side.jsx`
+    - `04-simple-side-by-side-on-brand.jsx`
+    - `05-simple-stacked.jsx`
+    - `06-centered-card.jsx`
+    - `07-side-by-side-on-card.jsx`
+  - **pricing/** (12 components)
+    - `01-two-tiers-with-emphasized-right-tier.jsx`
+    - `02-two-tiers-with-emphasized-left-tier.jsx`
+    - `03-three-tiers-with-logos-and-feature-comparison.jsx`
+    - `04-two-tiers-with-extra-tier.jsx`
+    - `05-single-price-with-details.jsx`
+    - `06-three-tiers.jsx`
+    - `07-three-tiers-with-dividers.jsx`
+    - `08-three-tiers-with-emphasized-tier.jsx`
+    - `09-three-tiers-with-toggle.jsx`
+    - `11-four-tiers-with-toggle.jsx`
+    - `12-with-comparison-table.jsx`
+    - `14-three-tiers-with-feature-comparison.jsx`
+  - **stats-sections/** (8 components)
+    - `01-simple.jsx`
+    - `03-simple-grid.jsx`
+    - `05-with-background-image.jsx`
+    - `06-split-with-image.jsx`
+    - `07-timeline.jsx`
+    - `08-stepped.jsx`
+    - `09-two-column-description.jsx`
+    - `10-with-description.jsx`
+  - **team-sections/** (9 components)
+    - `01-small-images.jsx`
+    - `02-large-images.jsx`
+    - `03-grid-with-round-images.jsx`
+    - `04-large-grid-with-cards.jsx`
+    - `05-with-image-and-short-paragraph.jsx`
+    - `06-with-vertical-images.jsx`
+    - `07-with-vertical-images-full-width.jsx`
+    - `08-grid-with-large-round-images.jsx`
+    - `09-medium-images.jsx`
+  - **testimonials/** (8 components)
+    - `02-simple-centered.jsx`
+    - `03-with-large-avatar.jsx`
+    - `04-with-overlapping-image.jsx`
+    - `05-with-background-image.jsx`
+    - `06-side-by-side.jsx`
+    - `08-with-star-rating.jsx`
+    - `09-grid.jsx`
+    - `10-subtle-grid.jsx`
+
+## All files (flat)
+
+- `elements/banners/01-with-button.jsx`
+- `elements/banners/02-on-dark.jsx`
+- `elements/banners/03-on-brand.jsx`
+- `elements/banners/04-with-background-glow.jsx`
+- `elements/banners/05-with-link.jsx`
+- `elements/banners/06-left-aligned.jsx`
+- `elements/banners/07-bottom-aligned.jsx`
+- `elements/banners/08-floating-at-bottom.jsx`
+- `elements/banners/09-floating-at-bottom-centered.jsx`
+- `elements/banners/10-privacy-notice-right-aligned.jsx`
+- `elements/banners/11-privacy-notice-centered.jsx`
+- `elements/banners/12-privacy-notice-left-aligned.jsx`
+- `elements/banners/13-privacy-notice-full-width.jsx`
+- `elements/flyout-menus/01-stacked-with-footer-actions.jsx`
+- `elements/flyout-menus/02-full-width-two-columns.jsx`
+- `elements/flyout-menus/03-stacked-with-footer-list.jsx`
+- `elements/flyout-menus/04-full-width.jsx`
+- `elements/flyout-menus/05-simple-with-descriptions.jsx`
+- `elements/flyout-menus/06-two-column.jsx`
+- `elements/flyout-menus/07-simple.jsx`
+- `elements/headers/01-with-stacked-flyout-menu.jsx`
+- `elements/headers/02-constrained.jsx`
+- `elements/headers/04-on-brand-background.jsx`
+- `elements/headers/05-with-full-width-flyout-menu.jsx`
+- `elements/headers/06-full-width.jsx`
+- `elements/headers/07-with-call-to-action.jsx`
+- `elements/headers/08-with-multiple-flyout-menus.jsx`
+- `elements/headers/09-with-icons-in-mobile-menu.jsx`
+- `elements/headers/10-with-left-aligned-nav.jsx`
+- `elements/headers/11-with-right-aligned-nav.jsx`
+- `elements/headers/12-with-centered-logo.jsx`
+- `feedback/404-pages/01-simple.jsx`
+- `feedback/404-pages/02-split-with-image.jsx`
+- `feedback/404-pages/03-with-popular-pages.jsx`
+- `feedback/404-pages/05-with-background-image.jsx`
+- `feedback/404-pages/06-with-navbar-and-footer.jsx`
+- `page-examples/about-pages/01-with-image-tiles.jsx`
+- `page-examples/about-pages/02-with-timeline-and-stats.jsx`
+- `page-examples/about-pages/03-with-two-column-description.jsx`
+- `page-examples/landing-pages/01-with-screenshots-and-stats.jsx`
+- `page-examples/landing-pages/02-with-large-screenshot-and-testimonial.jsx`
+- `page-examples/landing-pages/03-with-background-image-hero-and-pricing-section.jsx`
+- `page-examples/landing-pages/04-with-mobile-screenshot-and-testimonials-grid.jsx`
+- `page-examples/pricing-pages/01-with-four-tiers.jsx`
+- `page-examples/pricing-pages/02-with-comparison-table.jsx`
+- `page-examples/pricing-pages/03-with-three-tiers-and-testimonials.jsx`
+- `sections/bento-grids/01-three-column-bento-grid.jsx`
+- `sections/bento-grids/02-two-row-bento-grid.jsx`
+- `sections/bento-grids/03-two-row-bento-grid-with-three-column-second-row.jsx`
+- `sections/blog-sections/01-three-column.jsx`
+- `sections/blog-sections/02-three-column-with-images.jsx`
+- `sections/blog-sections/03-three-column-with-background-images.jsx`
+- `sections/blog-sections/04-single-column.jsx`
+- `sections/blog-sections/05-single-column-with-images.jsx`
+- `sections/blog-sections/06-with-featured-post.jsx`
+- `sections/blog-sections/07-with-photo-and-list.jsx`
+- `sections/contact-sections/01-centered.jsx`
+- `sections/contact-sections/02-side-by-side-grid.jsx`
+- `sections/contact-sections/03-split-with-pattern.jsx`
+- `sections/contact-sections/05-simple-four-column.jsx`
+- `sections/contact-sections/06-simple-centered.jsx`
+- `sections/contact-sections/07-with-testimonial.jsx`
+- `sections/contact-sections/08-split-with-image.jsx`
+- `sections/content-sections/01-with-sticky-product-screenshot.jsx`
+- `sections/content-sections/02-with-testimonial.jsx`
+- `sections/content-sections/03-with-image-tiles.jsx`
+- `sections/content-sections/04-two-columns-with-screenshot.jsx`
+- `sections/content-sections/05-with-testimonial-and-stats.jsx`
+- `sections/content-sections/06-split-with-image.jsx`
+- `sections/content-sections/07-centered.jsx`
+- `sections/cta-sections/01-dark-panel-with-app-screenshot.jsx`
+- `sections/cta-sections/02-simple-stacked.jsx`
+- `sections/cta-sections/03-centered-on-dark-panel.jsx`
+- `sections/cta-sections/04-simple-centered.jsx`
+- `sections/cta-sections/05-simple-centered-with-gradient.jsx`
+- `sections/cta-sections/06-simple-centered-on-brand.jsx`
+- `sections/cta-sections/07-simple-justified.jsx`
+- `sections/cta-sections/08-simple-justified-on-subtle-brand.jsx`
+- `sections/cta-sections/09-split-with-image.jsx`
+- `sections/cta-sections/10-two-columns-with-photo.jsx`
+- `sections/cta-sections/11-with-image-tiles.jsx`
+- `sections/faq-sections/01-offset-with-supporting-text.jsx`
+- `sections/faq-sections/02-centered-accordion.jsx`
+- `sections/faq-sections/04-side-by-side.jsx`
+- `sections/faq-sections/05-three-columns.jsx`
+- `sections/faq-sections/07-three-columns-with-centered-introduction.jsx`
+- `sections/faq-sections/08-two-columns.jsx`
+- `sections/faq-sections/10-two-columns-with-centered-introduction.jsx`
+- `sections/feature-sections/01.with-product-screenshot.jsx`
+- `sections/feature-sections/03.with-large-screenshot.jsx`
+- `sections/feature-sections/05.with-large-bordered-screenshot.jsx`
+- `sections/feature-sections/07.simple-three-column-with-small-icons.jsx`
+- `sections/feature-sections/09.with-product-screenshot-on-left.jsx`
+- `sections/feature-sections/10.simple-three-column-with-large-icons.jsx`
+- `sections/feature-sections/12.contained-in-panel.jsx`
+- `sections/feature-sections/13.with-product-screenshot-panel.jsx`
+- `sections/feature-sections/14.with-testimonial.jsx`
+- `sections/feature-sections/15.offset-2x2-grid.jsx`
+- `sections/feature-sections/16.with-code-example-panel.jsx`
+- `sections/feature-sections/17.offset-with-feature-list.jsx`
+- `sections/feature-sections/18.simple.jsx`
+- `sections/feature-sections/19.centered-2x2-grid.jsx`
+- `sections/feature-sections/20.simple-3x2-grid.jsx`
+- `sections/footers/02-4-column-with-company-mission.jsx`
+- `sections/footers/04-4-column-with-call-to-action.jsx`
+- `sections/footers/06-4-column-simple.jsx`
+- `sections/footers/08-4-column-with-newsletter.jsx`
+- `sections/footers/10-4-column-with-newsletter-below.jsx`
+- `sections/footers/12-simple-centered.jsx`
+- `sections/footers/14-simple-with-social-links.jsx`
+- `sections/header/01-with-stats.jsx`
+- `sections/header/02-centered.jsx`
+- `sections/header/03-centered-with-eyebrow.jsx`
+- `sections/header/04-with-cards.jsx`
+- `sections/header/05-simple.jsx`
+- `sections/header/06-simple-with-eyebrow.jsx`
+- `sections/header/07-simple-with-background-image.jsx`
+- `sections/header/08-centered-with-background-image.jsx`
+- `sections/heroes/01-simple-centered.jsx`
+- `sections/heroes/02-split-with-screenshot.jsx`
+- `sections/heroes/03-split-with-bordered-screenshot.jsx`
+- `sections/heroes/04-split-with-code-example.jsx`
+- `sections/heroes/05-simple-centered-with-background-image.jsx`
+- `sections/heroes/06-with-bordered-app-screenshot.jsx`
+- `sections/heroes/07-with-app-screenshot.jsx`
+- `sections/heroes/08-with-phone-mockup.jsx`
+- `sections/heroes/09-split-with-image.jsx`
+- `sections/heroes/10-with-angled-image-on-right.jsx`
+- `sections/heroes/11-with-image-tiles.jsx`
+- `sections/heroes/12-with-offset-image.jsx`
+- `sections/logo-clouds/01-simple-with-heading.jsx`
+- `sections/logo-clouds/03-simple-with-call-to-action.jsx`
+- `sections/logo-clouds/05-simple-left-aligned.jsx`
+- `sections/logo-clouds/07-split-with-logos-on-right.jsx`
+- `sections/logo-clouds/09-simple.jsx`
+- `sections/logo-clouds/11-grid.jsx`
+- `sections/newsletter-sections/01-side-by-side-with-details.jsx`
+- `sections/newsletter-sections/02-simple-side-by-side.jsx`
+- `sections/newsletter-sections/04-simple-side-by-side-on-brand.jsx`
+- `sections/newsletter-sections/05-simple-stacked.jsx`
+- `sections/newsletter-sections/06-centered-card.jsx`
+- `sections/newsletter-sections/07-side-by-side-on-card.jsx`
+- `sections/pricing/01-two-tiers-with-emphasized-right-tier.jsx`
+- `sections/pricing/02-two-tiers-with-emphasized-left-tier.jsx`
+- `sections/pricing/03-three-tiers-with-logos-and-feature-comparison.jsx`
+- `sections/pricing/04-two-tiers-with-extra-tier.jsx`
+- `sections/pricing/05-single-price-with-details.jsx`
+- `sections/pricing/06-three-tiers.jsx`
+- `sections/pricing/07-three-tiers-with-dividers.jsx`
+- `sections/pricing/08-three-tiers-with-emphasized-tier.jsx`
+- `sections/pricing/09-three-tiers-with-toggle.jsx`
+- `sections/pricing/11-four-tiers-with-toggle.jsx`
+- `sections/pricing/12-with-comparison-table.jsx`
+- `sections/pricing/14-three-tiers-with-feature-comparison.jsx`
+- `sections/stats-sections/01-simple.jsx`
+- `sections/stats-sections/03-simple-grid.jsx`
+- `sections/stats-sections/05-with-background-image.jsx`
+- `sections/stats-sections/06-split-with-image.jsx`
+- `sections/stats-sections/07-timeline.jsx`
+- `sections/stats-sections/08-stepped.jsx`
+- `sections/stats-sections/09-two-column-description.jsx`
+- `sections/stats-sections/10-with-description.jsx`
+- `sections/team-sections/01-small-images.jsx`
+- `sections/team-sections/02-large-images.jsx`
+- `sections/team-sections/03-grid-with-round-images.jsx`
+- `sections/team-sections/04-large-grid-with-cards.jsx`
+- `sections/team-sections/05-with-image-and-short-paragraph.jsx`
+- `sections/team-sections/06-with-vertical-images.jsx`
+- `sections/team-sections/07-with-vertical-images-full-width.jsx`
+- `sections/team-sections/08-grid-with-large-round-images.jsx`
+- `sections/team-sections/09-medium-images.jsx`
+- `sections/testimonials/02-simple-centered.jsx`
+- `sections/testimonials/03-with-large-avatar.jsx`
+- `sections/testimonials/04-with-overlapping-image.jsx`
+- `sections/testimonials/05-with-background-image.jsx`
+- `sections/testimonials/06-side-by-side.jsx`
+- `sections/testimonials/08-with-star-rating.jsx`
+- `sections/testimonials/09-grid.jsx`
+- `sections/testimonials/10-subtle-grid.jsx`
