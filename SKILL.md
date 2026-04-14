@@ -1,6 +1,6 @@
 ---
 name: emmi
-version: 0.1.0
+version: 0.2.0
 description: >-
   Emmi opinionated skill kit: iterative product planning (MVP to production), UI/UX with block library,
   hard QA (ferdig-ferdig), testing and CI/CD, Railway-first deployment, Next.js+tRPC+Prisma+Better Auth+Tailwind,
@@ -9,6 +9,10 @@ description: >-
 ---
 
 # Emmi
+
+## Communication style
+
+- Never use emojis in any output, code comments, docs, or generated content unless the user explicitly requests them.
 
 ## Update check (optional)
 
@@ -47,6 +51,37 @@ Read existing entries at session start when doing substantive product or UI work
 | [team-manager](team-manager/SKILL.md) | Tasks, process, GitHub |
 | [browse](browse/SKILL.md) | Headless browser testing (see skill; optional tooling there) |
 | [analytics](analytics/SKILL.md) | PostHog and related instrumentation |
+
+## SEO (external skill — always prefer)
+
+For any SEO-related task, defer to the dedicated SEO skill instead of improvising. These are not Emmi sub-skills — they live externally and are invoked directly.
+
+**If the skill is not installed**, install it first:
+```bash
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.sh | bash
+```
+Source: https://github.com/AgriciDaniel/claude-seo
+
+| Intent | Invoke |
+|--------|--------|
+| Full site audit | `/seo` or `/seo-audit` |
+| Single page analysis | `/seo-page` |
+| Technical SEO (crawlability, Core Web Vitals, indexability) | `/seo-technical` |
+| Schema / structured data | `/seo-schema` |
+| Content quality, E-E-A-T | `/seo-content` |
+| Sitemap | `/seo-sitemap` |
+| Backlinks | `/seo-backlinks` |
+| Local SEO, Google Business Profile | `/seo-local` |
+| Maps intelligence, geo-grid ranking | `/seo-maps` |
+| GEO / AI Overviews / ChatGPT / Perplexity visibility | `/seo-geo` |
+| Google APIs (Search Console, CrUX, GA4) | `/seo-google` |
+| DataForSEO data (SERP, keywords, live data) | `/seo-dataforseo` |
+| Image SEO and OG images | `/seo-images` |
+| Hreflang / international SEO | `/seo-hreflang` |
+| Programmatic SEO planning | `/seo-programmatic` |
+| Competitor pages | `/seo-competitor-pages` |
+| Performance (Core Web Vitals lab data) | `/seo-performance` |
+| SEO strategy and planning | `/seo-plan` |
 
 ## UI blocks index
 

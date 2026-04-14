@@ -21,6 +21,8 @@ When the user’s request matches a sub-skill, **read that skill first** instead
 | Headless browser QA | `browse/SKILL.md` |
 | Analytics (PostHog, etc.) | `analytics/SKILL.md` |
 
+**SEO:** Always prefer the dedicated SEO skill at `~/.claude/skills/seo/` — invoke `/seo`, `/seo-audit`, `/seo-technical`, `/seo-page`, `/seo-schema`, `/seo-content`, `/seo-local`, `/seo-geo`, etc. Do not improvise SEO work without it.
+
 **Rules and evaluators:** **Never** append to `rules/` or `evaluators/` without explicit user approval. You may suggest additions. Read existing files when doing substantive work.
 
 **UI blocks:** `~/.claude/skills/emmi/ui-blocks/CATALOG.md` and per-pack `BLOCKS.md`.

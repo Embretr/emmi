@@ -1,6 +1,6 @@
 # Emmi
 
-My very own heavily opinionated Claude Code skillset. Sole purpose is to maximize productivity of my workflows with Claude Code.
+My very own heavily opinionated Claude Code skillset. Sole purpose is get the best possible results from my day-to-day work using claude code, based on my own workflows, preferences and opinions.
 
 **Repo:** https://github.com/Embretr/emmi
 ---
