@@ -1,6 +1,6 @@
 ---
 name: emmi
-version: 0.2.8
+version: 0.3.0
 description: >-
   Emmi opinionated skill kit: iterative product planning (MVP to production), UI/UX with block library,
   hard QA (ferdig-ferdig), testing and CI/CD, Railway-first deployment, Next.js+tRPC+Prisma+Better Auth+Tailwind,
