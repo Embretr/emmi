@@ -1,37 +1,38 @@
 # Emmi
 
-My very own heavily opinionated Claude Code skillset. Sole purpose is get the best possible results from my day-to-day work using claude code, based on my own workflows, preferences and opinions.
+My heavily opinionated Claude Code skill kit. Built around my own workflows, preferences, and opinions — sole purpose is to get the best possible results from day-to-day work with Claude Code.
 
 **Repo:** https://github.com/Embretr/emmi
+
 ---
 
-## Step 1: Install on your machine
+## Install
 
-Open **Claude Code**, paste the block below, and send it. Claude runs the clone and setup (same idea as [gstack’s install](https://github.com/garrytan/gstack), but **this repo is only Emmi** — no gstack bundled here).
+**Option 1 — paste into Claude Code:**
 
 ```
 Install Emmi: run
 git clone --single-branch --depth 1 https://github.com/Embretr/emmi.git ~/emmi && cd ~/emmi && ./bin/setup
 
-Then restart Claude Code or start a new session so skills load.
+Then restart Claude Code or start a new session so the skills load.
 
-If the user wants routing for **their current project**, offer to append the "Emmi skill routing" section from ~/.claude/skills/emmi/CLAUDE.md (or this repo’s CLAUDE.md) to that project’s CLAUDE.md. Do not add anything about gstack unless the user asks for gstack separately.
+If the user wants routing for their current project, offer to append the "Emmi skill routing" section from ~/.claude/skills/emmi/CLAUDE.md to that project's CLAUDE.md.
 ```
 
----
-
-## Install (shell only)
+**Option 2 — shell:**
 
 ```bash
 git clone --single-branch --depth 1 https://github.com/Embretr/emmi.git ~/emmi
 cd ~/emmi && ./bin/setup
 ```
 
-`./bin/setup` symlinks `~/.claude/skills/emmi` → your clone. Override:
+`./bin/setup` symlinks `~/.claude/skills/emmi` to your clone. Override the target:
 
 ```bash
 EMMI_SKILLS_HOME=/path/to/.claude/skills ./bin/setup
 ```
+
+---
 
 ## Update
 
@@ -39,21 +40,27 @@ EMMI_SKILLS_HOME=/path/to/.claude/skills ./bin/setup
 cd ~/emmi && git pull && ./bin/emmi-update-check
 ```
 
-If you see `UPGRADE_AVAILABLE`, you pulled new commits; restart the session. (`emmi-update-check` needs a git remote and upstream.)
+If output shows `UPGRADE_AVAILABLE`, restart your Claude Code session to pick up the new skills.
 
-## Layout
+---
+
+## What's inside
 
 | Path | Role |
 |------|------|
-| `SKILL.md` | Main router |
+| `SKILL.md` | Kit router — read first |
 | `*/SKILL.md` | Sub-skills |
-| `ui-blocks/` | Block library + `CATALOG.md` |
-| `rules/` | Things to avoid (local entries gitignored) |
+| `ui-ux/SKILL.md` | UI/UX rules, design system, interaction patterns |
+| `ferdig-ferdig/SKILL.md` | Production-readiness QA, four gates |
+| `ui-blocks/` | Block library and `CATALOG.md` |
+| `rules/` | Patterns to avoid (local entries gitignored) |
 | `evaluators/` | Quality signals (local entries gitignored) |
-| `bin/setup` | Global install symlink |
-| `bin/emmi-update-check` | Compare local clone to remote |
-| `CLAUDE.md` | Emmi-only routing to merge into app repos |
+| `bin/setup` | Symlink installer |
+| `bin/emmi-update-check` | Compare local clone to remote HEAD |
+| `CLAUDE.md` | Routing block to merge into project repos |
+
+---
 
 ## License
 
-Add your license when you publish the repo.
+MIT
