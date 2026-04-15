@@ -4,6 +4,8 @@ Copy or merge this into an application repo’s **CLAUDE.md** when you want agen
 
 When the user’s request matches a sub-skill, **read that skill first** instead of improvising.
 
+**Output:** Prefer **minimal text**. No narration of what you are doing; **let code changes speak**. Drop explanations unless the user asked, something is unsafe/ambiguous, or a single short note is needed for review.
+
 | Intent | Skill path (repo or `~/.claude/skills/emmi/`) |
 |--------|------------------------------------------------|
 | New feature or greenfield plan, MVP to production, deep Q&A | `iterative-process/SKILL.md` |

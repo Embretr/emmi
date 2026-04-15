@@ -1,6 +1,6 @@
 ---
 name: emmi
-version: 0.3.0
+version: 0.3.1
 description: >-
   Emmi opinionated skill kit: iterative product planning (MVP to production), UI/UX with block library,
   hard QA (ferdig-ferdig), testing and CI/CD, Railway-first deployment, Next.js+tRPC+Prisma+Better Auth+Tailwind,
@@ -13,6 +13,7 @@ description: >-
 ## Communication style
 
 - Never use emojis in any output, code comments, docs, or generated content unless the user explicitly requests them.
+- Save tokens: default to **minimal prose**. Skip step-by-step narration, “I will…”, and play-by-play of edits. **Let diffs and code speak**; only add text when the user asked a question, you must warn (risk, ambiguity), or a one-line summary materially helps review.
 
 ## Update check (optional)
 
