@@ -11,3 +11,21 @@ fi
 rm -f "$TARGET"
 ln -sf "$REPO_ROOT" "$TARGET"
 echo "Linked $TARGET -> $REPO_ROOT"
+
+# Sub-skills — each gets its own entry so they're available as slash commands
+SUB_SKILLS=(
+  analytics-dev architect-dev deployment-dev efficiency-dev ferdig-ferdig
+  iterative-process mobile-dev monorepo-dev product-manager team-manager
+  test ui-ux web-dev
+)
+for sub in "${SUB_SKILLS[@]}"; do
+  dest="$TARGET_DIR/$sub"
+  src="$REPO_ROOT/$sub"
+  if [[ -e "$dest" && ! -L "$dest" ]]; then
+    echo "Skipping $sub: non-symlink already exists at $dest" >&2
+    continue
+  fi
+  rm -f "$dest"
+  ln -sf "$src" "$dest"
+  echo "Linked $dest -> $src"
+done
