@@ -17,6 +17,10 @@ SUB_SKILLS=(
   analytics-dev architect-dev browse deployment-dev efficiency-dev ferdig-ferdig
   iterative-process mobile-dev monorepo-dev product-manager team-manager
   test ui-ux web-dev
+  seo seo-audit seo-backlinks seo-competitor-pages seo-content seo-dataforseo
+  seo-firecrawl seo-geo seo-google seo-hreflang seo-image-gen seo-images
+  seo-local seo-maps seo-page seo-plan seo-programmatic seo-schema seo-sitemap
+  seo-technical
 )
 for sub in "${SUB_SKILLS[@]}"; do
   dest="$TARGET_DIR/$sub"
