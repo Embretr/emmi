@@ -10,6 +10,7 @@ When the user’s request matches a sub-skill, **read that skill first** instead
 |--------|------------------------------------------------|
 | New feature or greenfield plan, MVP to production, deep Q&A | `iterative-process/SKILL.md` |
 | UI build or polish using blocks + domain rules | `ui-ux/SKILL.md` |
+| Redesign, score, or critique an existing screen (CLEAR framework) | `clear/SKILL.md` |
 | Production readiness QA, break-it testing, web or mobile | `ferdig-ferdig/SKILL.md` |
 | Tests, CI/CD, regression strategy | `test/SKILL.md` |
 | Deploy (Railway-first) | `deployment/SKILL.md` |

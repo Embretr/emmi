@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{{SCREEN_NAME}} — CLEAR redesign</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // Brand tokens injected at Stage 1 of the runbook.
+  // Replace the commented placeholders with the extracted tokens
+  // from the brand-sheet; keep the exact structure.
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          // brand:      '#0A2540',
+          // surface:    '#F7F8FA',
+          // muted:      '#64748B',
+          // success:    '#16A34A',
+          // warning:    '#D97706',
+          // danger:     '#DC2626',
+        },
+        fontFamily: {
+          // sans: ['Geist Sans', 'Inter', 'system-ui', 'sans-serif'],
+        },
+        borderRadius: {
+          // DEFAULT: '8px',
+          // lg:      '12px',
+          // xl:      '16px',
+        },
+        boxShadow: {
+          // soft:   '0 1px 2px rgba(15, 23, 42, 0.04)',
+          // medium: '0 2px 8px rgba(15, 23, 42, 0.08)',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  /* Brand-specific CSS that Tailwind config can't express. */
+</style>
+</head>
+<body class="font-sans bg-white text-slate-900">
+  <!-- ======================================================== -->
+  <!-- REDESIGNED SCREEN GOES HERE                              -->
+  <!-- ======================================================== -->
+</body>
+</html>
