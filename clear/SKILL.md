@@ -112,7 +112,7 @@ For each pillar in scope, in CLEAR order:
 
 **Screenshot / URL input runs:**
 ```
-<cwd>/clear-runs/<YYYY-MM-DD-HHMM>-<screen-slug>/
+~/clear-runs/<project-slug>/<YYYY-MM-DD-HHMM>-<screen-slug>/
   mockup.html           ← the redesigned screen
   brand-sheet.html      ← extracted brand preview (optional — may be shown inline instead)
   report.md             ← scorecard before/after, per-pillar summaries
@@ -122,14 +122,14 @@ For each pillar in scope, in CLEAR order:
 
 **Code input runs:** edits applied in place. Plus:
 ```
-<cwd>/clear-runs/<YYYY-MM-DD-HHMM>-<screen-slug>/
+~/clear-runs/<project-slug>/<YYYY-MM-DD-HHMM>-<screen-slug>/
   report.md             ← scorecard before/after, list of files edited
   summary.md            ← (optional) non-technical stakeholder summary
   original-snapshot/    ← copies of edited files before changes (safety)
   preview.html          ← (optional) standalone render for visual review
 ```
 
-If `<cwd>` is read-only, fall back to `~/clear-runs/` and inform the user.
+`<project-slug>` is the working directory's basename (e.g. `my-app`). Run artifacts always live under `~/clear-runs/`, never inside the project repo — nothing from a run should end up committed. Code-input edits are the only files written into the repo.
 
 ## Non-goals
 
