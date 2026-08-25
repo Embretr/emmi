@@ -41,6 +41,7 @@ Read existing entries at session start when doing substantive product or UI work
 | [iterative-process](iterative-process/SKILL.md) | New features, new projects, nothing → MVP → production plan, feedback rounds |
 | [ui-ux](ui-ux/SKILL.md) | UI from blocks + ecommerce / marketing / application rules |
 | [clear](clear/SKILL.md) | Redesign an existing screen with the CLEAR framework (Copywriting, Layout, Emphasis, Accessibility, Reward); score/critique a UI |
+| [design-shotgun](design-shotgun/SKILL.md) | Visual brainstorming: generate multiple distinct HTML design variants, compare side-by-side, iterate to an approved direction |
 | [ferdig-ferdig](ferdig-ferdig/SKILL.md) | Ship-quality QA, Playwright (web) or Maestro (mobile), adversarial use |
 | [test](test/SKILL.md) | Unit through smoke tests, CI/CD, regression prevention |
 | [deployment](deployment/SKILL.md) | Railway-first deploy, env, rollbacks |

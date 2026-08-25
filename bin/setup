@@ -14,7 +14,7 @@ echo "Linked $TARGET -> $REPO_ROOT"
 
 # Sub-skills — each gets its own entry so they're available as slash commands
 SUB_SKILLS=(
-  analytics-dev architect-dev browse clear deployment-dev efficiency-dev ferdig-ferdig
+  analytics-dev architect-dev browse clear deployment-dev design-shotgun efficiency-dev ferdig-ferdig
   iterative-process mobile-dev monorepo-dev product-manager team-manager
   test ui-ux web-dev
   seo seo-audit seo-backlinks seo-competitor-pages seo-content seo-dataforseo
