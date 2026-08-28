@@ -4,7 +4,7 @@ Copy or merge this into an application repo’s **CLAUDE.md** when you want agen
 
 When the user’s request matches a sub-skill, **read that skill first** instead of improvising.
 
-**Output:** Prefer **minimal text**. No narration of what you are doing; **let code changes speak**. Drop explanations unless the user asked, something is unsafe/ambiguous, or a single short note is needed for review.
+**Output:** Prefer **minimal text**. No narration of what you are doing; **let code changes speak**. Drop explanations unless the user asked, something is unsafe/ambiguous, or a single short note is needed for review. **NEVER use em-dashes** in any writing (prose, copy, comments, commit messages); use a comma, colon, or separate sentence instead. **NEVER add "Generated with Claude Code"** (or any AI attribution/co-author line) to PRs or commit messages.
 
 | Intent | Skill path (repo or `~/.claude/skills/emmi/`) |
 |--------|------------------------------------------------|
